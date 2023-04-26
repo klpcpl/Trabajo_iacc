@@ -8,8 +8,9 @@ $total=0; $acumulador=0;
 for($i=0; $i<=9; $i++)
 	{
 	$total=$notas_1[$i]+$notas_2[$i]+$notas_3[$i];
-	$promedio=$total/3;
+	$promedio=ceil($total/3);
 	echo "promedio $i = ".$promedio."<br>";
 	$acumulador=$acumulador+$promedio;
 	}
-?>
+
+	?>
