@@ -1,5 +1,13 @@
 <?php
 
+/**
+ * Nombre Alumno: Guillermo Ulloa Ordenes
+ * Trabajo: TAREA SEMANA 5
+ * Contenidos de la semana 5.
+ * NOMBRE: Arreglos en PHP.
+ * IACC
+ */
+
 function sacado(){
 
 
