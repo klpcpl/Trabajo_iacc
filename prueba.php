@@ -1,5 +1,6 @@
 <?php
 
+// hola mundo para mostrar modificación a mi hija
 class inicio{
     public $likes = 100;
 
