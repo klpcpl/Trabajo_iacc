@@ -33,7 +33,8 @@ function sacado(){
     }
     // hago impresion temportal en la pagina
     echo $dato; 
-    $info = ob_get_clean(); //obtengo la información y lo paso a la varible
+    $info = ob_get_clean(); //obtengo la información y lo paso buffer varible
+    ob_end_clean(); // termino de cualquier residuo del buffer
     return  $info; // devuelvo todos los datos
 }
 
@@ -42,9 +43,9 @@ function sacado(){
 $result = sacado();
 
 echo "<h2>El promedio de los Alumnos </h2>";
-echo "<h3>El programa muestra como resultado el promedio de las notas por estudiante y luego
-son ordenadas de forma descendente</h3>";
-echo "<strong>El promedio sacado se aproximará</strong>";
+echo "<h3>El programa muestra como resultado el promedio <br>de las notas por estudiante y luego
+son ordenadas de <br> forma descendente. <br>";
+echo "El promedio sacado se aproximará</h3>";
 
 echo $result;
 
