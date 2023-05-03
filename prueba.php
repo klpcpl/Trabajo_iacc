@@ -21,6 +21,13 @@ class uno{
         $init->sumar(10);
         return $init->likes;
     }
+    public function __invoke()
+    {
+
+        $uno = new uno();
+        $reflector = new ReflectionClass($uno);
+         var_dump($reflector->getMethods());
+    }
 }
 
 class dos{
@@ -28,7 +35,22 @@ class dos{
     {
         $init->restar(60);
         return $init->likes;
+        
     }
+    public function __invoke()
+    {
+
+        $dos = new dos();
+        $reflector = new ReflectionClass($dos);
+         var_dump($reflector->getMethods());
+    }
+
+    public function __call($name, $arguments)
+    {
+        echo "esto es un error no existe el argumento".$name;
+
+    }
+    
 }
 
 $ini = new inicio();
@@ -41,9 +63,33 @@ echo "<br>";
 echo $uno->suma($ini);
 
 echo "<br>";
+echo "<pre>";
+$uno();
+echo "</pre>";
 
 $dos = new dos();
 echo $dos->resta($ini);
 echo "<br>";
 echo $dos->resta($ini);
 echo "<br>";
+echo "<br>";
+echo "<pre>";
+$dos->error();
+echo "</pre>";
+
+// class hola {
+
+//     public function saludarA($nombre) {
+//         return 'Hola ' . $nombre;
+//     }
+
+// }
+
+// $meto = new ReflectionMethod('hola', 'saludarA');
+// echo $meto->invoke(new hola(), 'Memosky');
+
+
+
+
+
+
