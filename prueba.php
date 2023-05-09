@@ -77,6 +77,24 @@ echo "<pre>";
 $dos->error();
 echo "</pre>";
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // class hola {
 
 //     public function saludarA($nombre) {
