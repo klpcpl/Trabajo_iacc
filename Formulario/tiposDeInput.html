@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    
+    <!-- inicio de un formulario html o puede ser otro tipo de extención como php -->
+    <form action="#" method="post">
+        <br>Input type text<br>
+        Nombre:<br>
+        <input type="text" name="nombre"><br>
+
+        <br>Input type password<br>
+        Contraseña:<br>
+        <input type="password" name="psw">
+        <br>
+
+        <br>Input type radio<br>
+        tipo radio
+        <input type="radio" name="gender" value="male" checked> Hombre<br>
+        <input type="radio" name="gender" value="female"> Mujer<br>
+        <input type="radio" name="gender" value="other"> Otro
+
+        <br>Input type checkbox<br>
+        <input type="checkbox" name="vehicle1" value="Bike"> Tengo una bicicleta<br>
+        <input type="checkbox" name="vehicle2" value="Car"> Tengo un auto
+
+        <br>Input type color<br>
+        Selecciona tu color favorito:<br>
+        <input type="color" name="favcolor">
+
+        <br>Input type date<br>
+        Selecciona fecha<br>
+        Tu cumpleaños:
+        <input type="date" name="birthday">
+        <br>
+        Fecha antes del 1980-01-01:
+        <input type="date" name="bday" max="1979-12-31"><br>
+        Fecha después del 2000-01-01:
+        <input type="date" name="bday" min="2000-01-02"><br>
+
+        Input type datetime-local <br>
+        ¿Cuando te registraste? (fecha y hora):
+        <input type="datetime-local" name="daytime">
+        <br>
+
+        <br>Input type email<br>
+        Correo electrónico:
+        <input type="email" name="email">
+        <br>
+
+        <br>Input type file<br>
+        Selecciona un fichero: <input type="file" name="myFile">
+        <br>
+
+        Input type month <br>
+        Mes y año:
+        <input type="month" name="monthYear">
+
+        <br>
+        Input type number<br>
+        Cantidad (entre 1 y 5):
+        <input type="number" name="quantity" min="1" max="5">
+        <br>
+        Cantidad:
+        <input type="number" name="points" min="0" max="100" step="10" value="30">
+
+        <br>
+        Input type range<br>
+        <input type="range" name="points" min="0" max="10">
+
+        <br>
+        Input type search<br>
+        Busca en Google:
+        <input type="search" name="googlesearch">
+
+        <br>
+        Input type tel<br>
+        Teléfono:
+        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+        <br>
+        Input type time<br>
+        Selecciona la hora:
+        <input type="time" name="usr_time">
+
+        <br>Input type url<br>
+        Añade tu página web:
+        <input type="url" name="homepage">
+
+        <br>Input type week<br>
+        Selecciona la semana:
+        <input type="week" name="week_year">
+
+
+
+        <br>Input type button<br>
+        <input type="button" onclick="alert('¡Hola programador de PHP!')" value="¡Haz click!">
+        <br>Input type submit<br>
+        <input type="submit" value="Enviar"><br>
+        <br>Input type reset<br>
+        <input type="reset">
+    </form>
+
+
+</body>
+</html> 
