@@ -33,12 +33,12 @@ $sql = "CREATE DATABASE IF NOT EXISTS ".DBNOMBRE;
 
 // Ejecutar la consulta
 if ($conn->query($sql) === true) {
-    echo "Base de datos creada exitosamente."."\n";
+    echo "Base de datos prueba fue creada exitosamente."."\n";
 } else {
-    echo "Error al crear la base de datos: " . $conn->error."\n";
+    echo "Error al crear la base de datos prueba con el siguiente problema: " . $conn->error."\n";
 }
 
-// Cerrar la conexión
+// Cerrar la conexión a la BD
 $conn->close();
 
 //================================================================================
@@ -49,9 +49,9 @@ $conn->close();
 // Crear la conexión nuevamente ahora conectada a la bd creada
 $conn = new mysqli(SERVIDOR, USUARIO, CLAVE, DBNOMBRE);
 
-// Verificar la conexión
+// Verificar la conexión si fue exitosa no manda el mensaje de error
 if ($conn->connect_error) {
-    die("Error de conexión: " . $conn->connect_error."\n");
+    die("Error de conexión prueba: " . $conn->connect_error."\n");
 }
 
 // Consulta SQL para crear la tabla "operaciones" si esta existe no la genera a traves de SQL
@@ -72,12 +72,12 @@ $sql2 = "CREATE TABLE IF NOT EXISTS dato (
 
 // Ejecutar las consultas
 if ($conn->query($sql1) === true && $conn->query($sql2) === true) {
-    echo "Tablas creadas exitosamente.";
+    echo "Tablas operaciones y dato fueron creadas exitosamente en la BD de .";
 } else {
-    echo "Error al crear las tablas: " . $conn->error."\n";
+    echo "Error al crear las tablas operaciones y dato con el siguiente problema: " . $conn->error."\n";
 }
 
-// Cerrar la conexión
+// Cerrar la conexión a la base de datos
 $conn->close();
 
 ?>
