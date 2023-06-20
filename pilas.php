@@ -1,5 +1,13 @@
 <?php
 
+/* Nombre Alumno: Guillermo Ulloa Ordenes
+ * Trabajo: TAREA SEMANA 3
+ * Contenidos de la semana 3.
+ * NOMBRE: Pilas en programación.
+ * IACC
+ * ejemplo: forma básica de representación de una Pila
+ */
+
 class PilaDeCartas {
     private $cartas;
   
